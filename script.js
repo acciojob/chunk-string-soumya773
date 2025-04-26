@@ -1,11 +1,9 @@
 function stringChop(str, size) {
-  // Handle null or invalid input
-  if (str === null || size <= 0) return [];
+ if (str === null || size <= 0) return []; // Safety checks
 
   const chunks = [];
-
   for (let i = 0; i < str.length; i += size) {
-    chunks.push(str.slice(i, i + size));
+    chunks.push(str.slice(i, i + size));// Extract chunk and push to array
   }
 
   return chunks;
