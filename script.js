@@ -23,6 +23,6 @@ if (str === null) {
   if (isNaN(size) || size <= 0) {
     alert("Invalid chunk size. Please enter a positive number. Returning empty array.");
   } else {
-    alert(JSON.stringify(stringChop(str, size)));
+    alert(JSON.stringify(stringChop(str, size))); 
   }
 }
